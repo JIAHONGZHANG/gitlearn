@@ -49,9 +49,13 @@ $ git reflog
 
 ## 1.5 Stage and Master
 
-![](/Users/zhangjiahong/Desktop/git_1.jpeg)
+![](https://raw.githubusercontent.com/JIAHONGZHANG/gitlearn/master/git_1.jpeg)
 
-![](/Users/zhangjiahong/Desktop/git_2.jpeg)
+
+
+![](https://raw.githubusercontent.com/JIAHONGZHANG/gitlearn/master/git_2.jpeg)
+
+
 
 ## 1.6 Undo
 
@@ -152,7 +156,9 @@ $ git branch -d <other branch name>
 
 - In this situation, merge conflict would happened.
 
-![](/Users/zhangjiahong/Desktop/git_3.png)
+![](https://raw.githubusercontent.com/JIAHONGZHANG/gitlearn/master/git_3.png)
+
+
 
 ## 1.12 Merge not use fast forward
 
@@ -166,11 +172,15 @@ $ git merge --no-ff -m "<commit>" <branch name>
 
 ​	When not using fast forward, it looks like:
 
-![](/Users/zhangjiahong/Desktop/git_4.png)
+![](https://raw.githubusercontent.com/JIAHONGZHANG/gitlearn/master/git_4.png)
+
+
 
 - It would be better if
 
-![](/Users/zhangjiahong/Desktop/git_5.png)
+![](https://raw.githubusercontent.com/JIAHONGZHANG/gitlearn/master/git_5.png)
+
+
 
 ## 1.13 Tag
 
