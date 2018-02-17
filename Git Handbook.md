@@ -1,3 +1,5 @@
+[TOC]
+
 # 1. Git
 
 ## 1.1 Install in Mac OS X
@@ -152,6 +154,10 @@ $ git merge <other branch name>
 $ git branch -d <other branch name>
 ```
 
+- Merge remote master
+
+If the remote master is after your own master in local, first ```$ git pull``` then ```$ git push```.
+
 ## 1.11 conflict
 
 - In this situation, merge conflict would happened.
@@ -217,7 +223,7 @@ $ git tag -d <tag name>
 $ git push origin :refs/tags/<tag name> 
 ```
 
-## Ignore
+## 2.1 Ignore
 
 - First create a file named .gitignore
 - Add like
@@ -230,7 +236,7 @@ $ git push origin :refs/tags/<tag name>
 
 - Add and commit to git
 
-## Setting
+## 2.2 Setting
 
 - If we need to change status to st
 
