@@ -101,7 +101,7 @@ git checkout --[file_name]
 
 ## 1.8 Push to Github
 
-1. First need to create repository in Github
+1. First need to create repository in Github. No need to create README and LICENSE first.
 2. Connect the two repository by using the command line below.
 
 ```
