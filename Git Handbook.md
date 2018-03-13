@@ -78,6 +78,13 @@ $ git checkout --file1.txt
 
 **git checkout is using master to replace workplace**
 
+- If want to back to any version. First get the version number by using ```$ git log```
+
+```
+$ git reset --hard <version number>
+$ git push -f -u origin master
+```
+
 ## 1.7 Delete
 
 - In general, delete file by using the command line below.
