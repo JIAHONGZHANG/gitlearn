@@ -123,6 +123,12 @@ $ git remote add origin git@github.com:<Github account name>/<project name>.git
 $ git push -u origin master
 ```
 
+4. Reset to previous commit & push to Github
+
+```
+$ git push --force
+```
+
 ## 1.9 Clone 
 
 ```
@@ -177,7 +183,7 @@ If the remote master is after your own master in local, first ```$ git pull``` t
 
 - In general, when using merge command, git will use fast forward. In this pattern, after deleting branch, it would lose branch information.
 
-  Thus, we need to forbid fast forward. In this situation, when merging, git will create a new commit, and then we can see the branch information in branch history.
+  Thus, we need to forbid fast forward. In this situation, when merging, git will create a new commit, and then we can see the branch information in branch history(**better way to merge**).
 
 ```
 $ git merge --no-ff -m "<commit>" <branch name>
@@ -242,6 +248,17 @@ $ git push origin :refs/tags/<tag name>
 ```
 
 - Add and commit to git
+- If we want to ignore all the untracked file. Assuming that we already have .gitignore file
+
+```
+$ git status --porcelain | grep '^??' | cut -c4- >> .gitignore
+```
+
+​	or we can use following command
+
+```
+$ echo "$(git status --porcelain | grep '^??' | cut -c4-)" > .gitignore
+```
 
 ## 2.2 Setting
 
@@ -249,6 +266,12 @@ $ git push origin :refs/tags/<tag name>
 
 ```
 $ git config --global alias.st status
+```
+
+- If we need to make ```$ git merge --no-ff -m "<commit>" <branch name>``` simpler
+
+```
+$ git config alias.mg "merge --no-ff -m"
 ```
 
 - Also we can make this change.
