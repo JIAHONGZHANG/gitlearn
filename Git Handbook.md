@@ -117,13 +117,20 @@ git checkout --[file_name]
 $ git remote add origin git@github.com:<Github account name>/<project name>.git
 ```
 
-3. Push to Github
+3. Create a new branch & Push it to Github
+
+```
+$git branch -b <new branch>
+$git push --set-upstream origin <new branch>
+```
+
+4. Push to Github
 
 ```
 $ git push -u origin master
 ```
 
-4. Reset to previous commit & push to Github
+5. Reset to previous commit & push to Github
 
 ```
 $ git push --force
