@@ -296,3 +296,9 @@ $ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Cre
 - If we do not add ```—global```, it only affect current repository.
 - All the config in ```.git/config```
 
+- To Find out the name of the original repository you cloned from in Git
+
+```
+$ git config --get remote.origin.url
+```
+
