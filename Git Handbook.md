@@ -178,6 +178,12 @@ $ git branch -d <other branch name>
 
 If the remote master is after your own master in local, first ```$ git pull``` then ```$ git push```.
 
+- Pull from master/remote master
+
+```
+$ git pull origin master
+```
+
 - Branch delete and sync to remote
 
 ```
